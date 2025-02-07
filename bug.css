@@ -1,0 +1,18 @@
+The CSS property `calc()` is used to perform calculations within CSS. However, when using `calc()` with percentages, unexpected results may occur due to the order of operations.  For example, consider this code:
+
+```css
+.element {
+  width: calc(50% - 10px);
+}
+```
+
+If the parent element has a width of 200px, you might expect the `.element` to have a width of 90px (100px - 10px). However, the calculation might be interpreted as `(50% - 10px)`, resulting in a different width.
+
+Another issue involves spaces around operators.  Incorrect spacing can lead to unexpected behaviour. For example:
+
+```css
+width: calc(50%  -  10px);
+/* Incorrect spacing */
+```
+
+This could result in unexpected layout issues.  Always ensure there are *no* extra spaces around the operators.
