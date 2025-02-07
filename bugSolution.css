@@ -1,0 +1,18 @@
+To correct the unexpected behavior, ensure the order of operations is explicit using parentheses and remove any unnecessary spaces around the operators. 
+
+For example, to ensure `50%` is calculated before the subtraction, you could rewrite the CSS like this:
+
+```css
+.element {
+  width: calc(50% - 10px);
+}
+```
+
+Or, to ensure no unexpected interpretation of spaces:
+
+```css
+width: calc(50% - 10px);
+/* Correct spacing */
+```
+
+Thorough testing and clear use of parentheses within the `calc()` function help to prevent these unexpected behaviors.
