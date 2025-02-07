@@ -1,0 +1,2 @@
+# CSS calc() function unexpected behavior
+This repository demonstrates an uncommon bug in CSS related to the `calc()` function.  The bug arises from the order of operations in calculations involving percentages and the importance of correct spacing around operators.  The `bug.css` file contains the problematic code, while `bugSolution.css` offers a corrected version.  The issue highlights the necessity for careful attention to detail when using the `calc()` function in CSS.
